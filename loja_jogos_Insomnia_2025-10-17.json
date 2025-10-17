@@ -1,0 +1,397 @@
+type: collection.insomnia.rest/5.0
+name: Loja de Games Spring
+meta:
+  id: wrk_e623dc5476af42a2a20ce2b628b3b041
+  created: 1760711233308
+  modified: 1760711233308
+  description: ""
+collection:
+  - name: Produto
+    meta:
+      id: fld_d329c030631e40e3aa09be44b574f682
+      created: 1760443134968
+      modified: 1760711428995
+      sortKey: -1760443134968
+      description: ""
+    children:
+      - url: http://localhost:8080/produtos
+        name: Listar Todos
+        meta:
+          id: req_6de7aa6bb1e64acca0a95b8f5efc2cbe
+          created: 1760443171119
+          modified: 1760728045028
+          isPrivate: false
+          description: ""
+          sortKey: -1760443171120
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos/6
+        name: Procurar por ID
+        meta:
+          id: req_baf96bf448ef481aa26aa25d92ec2f3c
+          created: 1760445307889
+          modified: 1760716921977
+          isPrivate: false
+          description: ""
+          sortKey: -1760443171070
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos/nome/Saboteur
+        name: Procurar por Produto
+        meta:
+          id: req_b1bc78bed9db43d4bfeee88f6d8c0a51
+          created: 1760448764435
+          modified: 1760726143904
+          isPrivate: false
+          description: ""
+          sortKey: -1760443171020
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos
+        name: Criar Produto
+        meta:
+          id: req_4524d078fe604cf6ab0778f505de292d
+          created: 1760450102987
+          modified: 1760718324438
+          isPrivate: false
+          description: ""
+          sortKey: -1760450102987
+        method: POST
+        body:
+          mimeType: application/json
+          text: "\t{
+
+            \t\t\"id\": 8,
+
+            \t\t\"nomeJogo\": \"Ticket to ride\",
+
+            \t\t\"descricao\": \"Em Ticket to Ride, os jogadores competem para
+            construir rotas ferroviárias em mapas icônicos pelo mundo. O jogo
+            combina estratégia simples e envolvente, ideal para todas as idades.
+            Premiado e com milhões de cópias vendidas, é referência entre jogos
+            de tabuleiro familiares.\",
+
+            \t\t\"marca\": \"Galápagos\",
+
+            \t\t\"preco\": 449.99,
+
+            \t\t\"numeroJogadores\": 5,
+
+            \t\t\"avaliacao\": 5.0,
+
+            \t\t\"foto\": \"https:\"
+
+            \t}
+
+            \t"
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos
+        name: Atualizar Produto
+        meta:
+          id: req_6d165f14785b402eb4773fa9659aab3f
+          created: 1760451645749
+          modified: 1760728420075
+          isPrivate: false
+          description: ""
+          sortKey: -1760446637053.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: >-
+            	{
+            		"id": 7,
+            		"nomeJogo": "Ticket to ride",
+            		"descricao": "Em Ticket to Ride, os jogadores competem para construir rotas ferroviárias em mapas icônicos pelo mundo. O jogo combina estratégia simples e envolvente, ideal para todas as idades. Premiado e com milhões de cópias vendidas, é referência entre jogos de tabuleiro familiares.",
+            		"marca": "Galápagos",
+            		"preco": 449.99,
+            		"numeroJogadores": 5,
+            		"avaliacao": 5.0,
+            		"foto": "https://ik.imagekit.io/milenasoliv10/ticket_to_ride.png?updatedAt=1760727714002",
+            		"categoria": {
+            			"id": 7,
+            			"tipo": "Classicos"
+            		}
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos/9
+        name: Deletar Produto
+        meta:
+          id: req_4bdcb851b61e49ba85e6a21117ce7daf
+          created: 1760452554058
+          modified: 1760728594619
+          isPrivate: false
+          description: ""
+          sortKey: -1760443171045
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos/menor/100
+        name: Menor que
+        meta:
+          id: req_1c7b7270c4d04f4aa59cfda4e4bd51e6
+          created: 1760726720460
+          modified: 1760726745553
+          isPrivate: false
+          description: ""
+          sortKey: -1760443170970
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos/maior/100
+        name: Maior que
+        meta:
+          id: req_f35bb43f071d47eb8412d9de546b60b1
+          created: 1760726730514
+          modified: 1760726792135
+          isPrivate: false
+          description: ""
+          sortKey: -1760443170920
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Categoria
+    meta:
+      id: fld_6e1e82122152455a90b39fa50a897095
+      created: 1760529270568
+      modified: 1760715877040
+      sortKey: -1760443134918
+      description: ""
+    children:
+      - url: http://localhost:8080/categorias
+        name: Listar Todas
+        meta:
+          id: req_867d0c6209484087bd0b4bbc79be1bef
+          created: 1760529270570
+          modified: 1760717180082
+          isPrivate: false
+          description: ""
+          sortKey: -1760443171120
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias/5
+        name: Procurar por ID
+        meta:
+          id: req_3e30baee28e6460cba2ee216d43746e6
+          created: 1760529270572
+          modified: 1760728646171
+          isPrivate: false
+          description: ""
+          sortKey: -1760443171070
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias
+        name: Criar Categoria
+        meta:
+          id: req_14404288a0834a1a890c3810e6657187
+          created: 1760529270573
+          modified: 1760718490626
+          isPrivate: false
+          description: ""
+          sortKey: -1760450102987
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"tipo": "Classicos"
+            }
+        parameters:
+          - name: ""
+            value: ""
+            disabled: false
+            id: pair_d9e4bf7590ee466b80d5390fe270f8e8
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias/tipo/jogo
+        name: Procurar por Tipo
+        meta:
+          id: req_d06e6815be1c4600b2245a23a554115d
+          created: 1760529270573
+          modified: 1760728655326
+          isPrivate: false
+          description: ""
+          sortKey: -1760443171020
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias
+        name: Atualizar Categoria
+        meta:
+          id: req_d743bcd8a28b4527994261c03db46361
+          created: 1760529270574
+          modified: 1760718530532
+          isPrivate: false
+          description: ""
+          sortKey: -1760446637053.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias/8
+        name: Deletar Categoria
+        meta:
+          id: req_fc9951779798401bb3b39b2e3d188dc6
+          created: 1760529270575
+          modified: 1760728613742
+          isPrivate: false
+          description: ""
+          sortKey: -1760443171045
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_f9bd23c76d854911915d986fb3c64c41
+    created: 1760443065947
+    modified: 1760443065947
+environments:
+  name: Base Environment
+  meta:
+    id: env_04510f1e212c44cfbd447954b83875b6
+    created: 1760443065942
+    modified: 1760443065942
+    isPrivate: false
