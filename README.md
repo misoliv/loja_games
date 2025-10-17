@@ -102,7 +102,7 @@ Para executar os códigos localmente, você precisará:
 - [Java JDK 17+](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - Banco de dados [MySQL](https://dev.mysql.com/downloads/)
 - [STS](https://spring.io/tools)
-- [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/)
+- [Insomnia](https://insomnia.rest/download) 
  
 <br />
  
