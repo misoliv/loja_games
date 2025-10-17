@@ -42,17 +42,14 @@ O Diagrama de Classes é um modelo visual usado na programação orientada a obj
 
 Esse diagrama ajuda a planejar e entender a arquitetura do sistema, mostrando como as entidades interagem e se conectam. É amplamente utilizado nas fases de design e documentação de projetos.
 
-
 ```mermaid
-erDiagram
+classDiagram
+    direction LR
+
     class tb_categorias {
         <<Entity>>
         +BIGINT id
         +VARCHAR(255) tipo
-        +getId() BIGINT
-        +setId(BIGINT) void
-        +getTipo() String
-        +setTipo(String) void
     }
 
     class tb_produtos {
@@ -66,27 +63,10 @@ erDiagram
         +INT numero_jogadores
         +DECIMAL(38,2) preco
         +BIGINT categoria_id
-        +getId() BIGINT
-        +setId(BIGINT) void
-        +getAvaliacao() Double
-        +setAvaliacao(Double) void
-        +getDescricao() String
-        +setDescricao(String) void
-        +getFoto() String
-        +setFoto(String) void
-        +getMarca() String
-        +setMarca(String) void
-        +getNomeJogo() String
-        +setNomeJogo(String) void
-        +getNumeroJogadores() Integer
-        +setNumeroJogadores(Integer) void
-        +getPreco() BigDecimal
-        +setPreco(BigDecimal) void
-        +getCategoriaId() BIGINT
-        +setCategoriaId(BIGINT) void
     }
 
     tb_categorias "1" --> "N" tb_produtos : contém
+
 ```
 
 <br />
