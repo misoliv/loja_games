@@ -69,7 +69,6 @@ classDiagram
 
 ```
 
-<br />
 ------
 
 ## 4. Diagrama Entidade-Relacionamento (DER)
